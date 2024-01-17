@@ -87,7 +87,7 @@ runs:
   using: docker
   image: "docker://quay.io/terraform-docs/gh-actions:1.0.0"
   args:
-    - '--network="host"'
+    - --network=host
   env:
     INPUT_WORKING_DIR: ${{ inputs.working-dir }}
     INPUT_ATLANTIS_FILE: ${{ inputs.atlantis-file }}
